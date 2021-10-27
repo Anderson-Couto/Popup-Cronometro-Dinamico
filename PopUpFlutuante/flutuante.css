@@ -1,0 +1,34 @@
+.popup{
+    position : fixed;
+    width : 138px;
+    height : 110px;
+    border : 1px solid #000;
+    background-color: white;
+    /*box-shadow: 0 0 5px gray;*/
+}
+
+.popup .title{
+  width: 130px;
+  text-align:center;
+  margin: 4px;
+  background: #CCC;
+  cursor : move;
+}
+
+.cronometro {
+    font-size: 30px;
+    padding: 2px 2px 2px 2px;
+    background-color: #d8d8d8;
+    margin: 2px 2px 2px 2px;
+    border: solid 1px #afafaf;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.alerta {
+    color: red;
+}
+
+body {
+    height: 3000px
+}

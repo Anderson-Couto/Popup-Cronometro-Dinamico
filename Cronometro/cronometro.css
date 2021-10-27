@@ -1,0 +1,77 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    font-family: verdana, sans-serif;
+}
+
+table {
+    font-size: .8em;
+}
+
+#titulo {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a567aa;
+    background-color: #d3bdd4;
+    box-sizing: border-box;
+    border-bottom: solid 1px lightgray;
+}
+
+#formulario {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 500px;
+    bottom: 0;
+    overflow: auto;
+    box-sizing: border-box;
+    border-right: solid 1px lightgray;
+    background-color: #e8e8e8;
+}
+
+#painel_cronometros {
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.cronometro {
+    font-size: 30px;
+    padding: 10px 2px;
+    background-color: #d8d8d8;
+    margin: 10px 0;
+    border: solid 1px #afafaf;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.cronometro_padrao {
+    color: blue;
+}
+
+.cronometro_amigavel {
+    color: darkgreen;
+}
+
+.alerta {
+    color: red;
+}

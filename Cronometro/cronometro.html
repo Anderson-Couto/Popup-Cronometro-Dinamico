@@ -1,0 +1,117 @@
+<!doctype>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Teste</title>
+
+    <link rel="stylesheet" href="cronometro.css">
+
+</head>
+
+<body>
+    <h1 id="titulo">
+        TESTE DE CRONOMETRO
+    </h1>
+    <form id="formulario">
+        <table style="margin: 20px auto;" cellspacing="0" cellpadding="10" border="0">
+            <caption style="font-weight: bold; padding: 10px 0;">opções do cronômetro</caption>
+            <tr>
+                <td>
+                    <label for="c1">
+                        segundos:
+                    </label>
+                </td>
+                <td>
+                    <input id="c1" type="number" value="10" style="width: 50px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="c2">
+                        alertar_faltando_segundos:
+                    </label>
+                </td>
+                <td>
+                    <input id="c2" type="number" value="3" style="width: 50px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="c3">
+                        regressivo:
+                    </label>
+                </td>
+                <td>
+                    <input type="checkbox" id="c3" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="c4">
+                        iniciar:
+                    </label>
+                </td>
+                <td>
+                    <input type="checkbox" id="c4" checked />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="c5">
+                        ao_terminar:
+                    </label>
+                </td>
+                <td>
+                    <label for="c5" style="font-style: italic;">
+                        digite a função javascript
+                    </label>
+                    <br />
+                    <textarea id="c5"
+                        style="width: 200px; height: 100px;">document.getElementById('check_' + i).checked = true;</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    funcao_para_mostrar:
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="f" id="c6" checked>
+                        cronometror.mostrarPadrao
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="f" id="c7">
+                        cronometror.mostrarAmigavel
+                    </label>
+                    <br />
+                    <label>
+                        <input type="radio" name="f" id="c8">
+                        outro
+                    </label>
+                    <br />
+                    <label for="c9" style="font-style: italic;">
+                        digite a função javascript
+                    </label>
+                    <br />
+                    <textarea id="c9" style="width: 200px; height: 100px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="button" value="criar" onclick="criarCronometro();" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="painel_cronometros">
+    </div>
+</body>
+
+<script src="cronometro.js"></script>
+
+
+</html>
